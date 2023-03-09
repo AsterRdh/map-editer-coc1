@@ -18,14 +18,64 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.Map-Edit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  background-color: red;
+}
+
 .App-link {
   color: #61dafb;
+}
+.box{
+  position: relative;
+  display: flex;
+
+  height: 5px;
+  width: 5px;
+  margin: 11px 52px;
+  justify-items: center;
+
+}
+
+.box-upper{
+  position: absolute;
+  z-index: 10;
+  top:7px;
+  left: -43px;
+  transform : scale(100%,100%);
+}
+
+.button{
+
+  position: absolute;
+  top: 0;
+  left: -19px;
+  z-index: 20;
+  border: 2px ;
+  width: 75px;
+  height: 75px;
+
+  transform:rotate3d(1,0,0,60deg) rotate3d(0,0,1,45deg);
+}
+.button-select{
+  position: absolute;
+  top: 0;
+  left: -19px;
+  z-index: 20;
+  border: 2px yellow solid ;
+  width: 71px;
+  height: 71px;
+  transform:rotate3d(1,0,0,60deg) rotate3d(0,0,1,45deg);
 }
 
 @keyframes App-logo-spin {
